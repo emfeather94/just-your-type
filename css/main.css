@@ -1,0 +1,70 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+p {
+  font-family: 'Crimson Text', serif;
+  letter-spacing: .2em;
+}
+
+.space {
+  letter-spacing: .75em;
+  text-align: center;
+}
+
+.shrink {
+  font-size: .75em;
+}
+
+.text-upper p {
+  font-family: 'Raleway', sans-serif;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .space {
+    letter-spacing: 1em;
+  }
+
+  .shrink {
+    font-size: .5em;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  .space {
+    letter-spacing: 1.25em;
+  }
+
+  .shrink {
+    font-size: .3em;
+  }
+
+  .grow {
+
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .space {
+    letter-spacing: 1.5em;
+  }
+
+  .shrink {
+    font-size: .2em;
+  }
+
+}
