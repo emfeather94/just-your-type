@@ -6,53 +6,103 @@
 
 html {
   box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
+body {
+  background-color: #FFEFD5;
+}
+
 p {
   font-family: 'Crimson Text', serif;
   letter-spacing: .2em;
+  color: grey;
+
 }
 
 .space {
-  letter-spacing: .75em;
-  text-align: center;
+  letter-spacing: .25em;
+  color: orange/*#556B2F*/;
 }
 
 .shrink {
-  font-size: .75em;
+  color: orange;
 }
 
 .text-upper p {
   font-family: 'Raleway', sans-serif;
 }
 
+.grow {
+  padding: 10px 0px;
+  font-size: .75em;
+  margin-left: .2em;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  font-family: 'Cutive Mono', monospace;
+  letter-spacing: none;
+}
+
+.squares {
+  overflow: hidden;
+  border-right: .05em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .2em;
+  animation:
+    typing 3.25s steps(40, end),
+    blink-caret .8s step-end infinite;
+  }
+
+  /* The typing effect *
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+  /* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+.cite {
+  color: orange;
+  font-family: 'Raleway', sans-serif;s
+}
 @media only screen and (min-width: 38em) {
 
   .space {
-    letter-spacing: 1em;
+    letter-spacing: .5em;
+    margin-left: .75em;
   }
 
   .shrink {
     font-size: .5em;
+  }
+
+  .grow {
+    font-size: 1em;
   }
 }
 
 @media only screen and (min-width: 60em) {
 
   .space {
-    letter-spacing: 1.25em;
+    letter-spacing: 1em;
+    margin-left: .75em;
   }
 
   .shrink {
     font-size: .3em;
-  }
-
-  .grow {
-
   }
 
 }
@@ -60,7 +110,8 @@ p {
 @media only screen and (min-width: 90em) {
 
   .space {
-    letter-spacing: 1.5em;
+    letter-spacing: 2em;
+    margin-left: .75em;
   }
 
   .shrink {
