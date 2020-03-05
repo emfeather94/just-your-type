@@ -10,11 +10,11 @@ p {
 
 .space {
   letter-spacing: .25em;
-  color: orange;
+  color: #ff8c00;
 }
 
 .shrink {
-  color: orange;
+  color: #ff8c00;
 }
 
 .text-upper p {
@@ -25,7 +25,6 @@ p {
   font-size: .75em;
   margin-left: .2em;
   text-align: center;
-  text-transform: uppercase;
   text-rendering: optimizeLegibility;
   font-family: "Cutive Mono", monospace;
   letter-spacing: 0;
@@ -33,7 +32,7 @@ p {
 
 .squares {
   overflow: hidden;
-  border-right: .05em solid orange;
+  border-right: .05em solid #ff8c00;
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: .2em;
@@ -54,12 +53,12 @@ p {
 
   from, to { border-color: transparent; }
 
-  50% { border-color: orange; }
+  50% { border-color: #ff8c00; }
 
 }
 
 .cite {
-  color: orange;
+  color: #ff8c00;
   font-family: Raleway, sans-serif;
 }
 
