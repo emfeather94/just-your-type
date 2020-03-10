@@ -22,7 +22,6 @@ p {
 }
 
 .grow {
-  font-size: .75em;
   margin-left: .2em;
   text-align: center;
   text-rendering: optimizeLegibility;
@@ -69,14 +68,6 @@ p {
     margin-left: .75em;
   }
 
-  .shrink {
-    font-size: .5em;
-  }
-
-  .grow {
-    font-size: 1em;
-  }
-
 }
 
 @media only screen and (min-width: 60em) {
@@ -86,10 +77,6 @@ p {
     margin-left: .75em;
   }
 
-  .shrink {
-    font-size: .3em;
-  }
-
 }
 
 @media only screen and (min-width: 90em) {
@@ -97,10 +84,6 @@ p {
   .space {
     letter-spacing: 2em;
     margin-left: .75em;
-  }
-
-  .shrink {
-    font-size: .2em;
   }
 
 }
